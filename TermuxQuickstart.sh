@@ -38,37 +38,23 @@ if [ $REPLY == "1" ]; then
 fi
 
 if [ $REPLY == "2" ]; then
-    pkg install wget openssl-tool proot tar -y &&
-	hash -r &&
-	wget https://raw.githubusercontent.com/Techriz/AndronixOrigin/master/Installer/Fedora/fedora.sh
-	&& bash fedora.sh;
+    pkg install wget openssl-tool proot tar -y && hash -r && wget https://raw.githubusercontent.com/Techriz/AndronixOrigin/master/Installer/Fedora/fedora.sh && bash fedora.sh;
 fi
 
 if [ $REPLY == "3" ]; then
-    pkg install wget openssl-tool proot tar -y &&
-	hash -r &&
-	wget https://raw.githubusercontent.com/Techriz/AndronixOrigin/master/Installer/Ubuntu/ubuntu.sh && bash ubuntu.sh;
+    pkg install wget openssl-tool proot tar -y && hash -r && wget https://raw.githubusercontent.com/Techriz/AndronixOrigin/master/Installer/Ubuntu/ubuntu.sh && bash ubuntu.sh;
 fi
 
 if [ $REPLY == "4" ]; then
-    pkg install wget openssl-tool proot tar -y &&
-	hash -r &&
-	wget https://raw.githubusercontent.com/Techriz/AndronixOrigin/master/Installer/Debian/debian.sh &&
-	bash debian.sh;
+    pkg install wget openssl-tool proot tar -y && hash -r && wget https://raw.githubusercontent.com/Techriz/AndronixOrigin/master/Installer/Debian/debian.sh && bash debian.sh;
 fi
 
 if [ $REPLY == "5" ]; then
-    pkg install wget openssl-tool proot tar -y &&
-	hash -r &&
-	wget https://raw.githubusercontent.com/Techriz/AndronixOrigin/master/Installer/Kali/kali.sh &&
-	bash kali.sh;
+    pkg install wget openssl-tool proot tar -y && hash -r && wget https://raw.githubusercontent.com/Techriz/AndronixOrigin/master/Installer/Kali/kali.sh && bash kali.sh;
 fi
 
 if [ $REPLY == "6" ]; then
-    pkg install wget openssl-tool proot tar -y &&
-	hash -r &&
-	wget https://raw.githubusercontent.com/Techriz/AndronixOrigin/master/Installer/Arch/armhf/arch.sh &&
-	bash arch.sh;
+    pkg install wget openssl-tool proot tar -y && hash -r && wget https://raw.githubusercontent.com/Techriz/AndronixOrigin/master/Installer/Arch/armhf/arch.sh && bash arch.sh;
 fi
 
 if [ $REPLY == "7" ]; then
