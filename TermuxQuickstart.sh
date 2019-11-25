@@ -11,7 +11,7 @@ read -p "
 	╔═══════════════════════════════════════╗
 	║      Termux Quickstart 1.1 Indev      ║
 	╠═══════════════════════════════════════╣
-	║  1. Install Reccomended Packages      ║
+	║  1. Update Packages                   ║
 	║  2. Install Fedora                    ║
 	║  3. Install Ubuntu                    ║
 	║  4. Install Debian                    ║
@@ -29,23 +29,8 @@ if [ $REPLY == "1" ]; then
 	apt upgrade -y;
 	pkg update -y;
 	pkg upgrade -y;
-
-	termux-toast -b cyan -g center Installing Software;
-	apt install git -y;
-	apt install wget -y;
 	apt install zip -y;
 	apt install unzip -y;
-	apt install python -y;
-	apt install python2 -y;
-	apt install apache2 -y;
-	apt install proot -y;
-	apt install sudo -y;
-	
-	termux-toast -b cyan -g center Updating Software;
-	apt update -y;
-	apt upgrade -y;
-	pkg update -y;
-	pkg upgrade -y;
 fi
 
 if [ $REPLY == "2" ]; then
