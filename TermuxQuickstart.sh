@@ -1,5 +1,5 @@
 pkg install termux-api -y
-termux-toast -g center Termux Quickstart
+termux-toast -b cyan -b cyan -g center Termux Quickstart
 clear
 
 read -p "
@@ -19,13 +19,13 @@ read -p "
 	╚═══════════════════════════════════════╝
 	   Option: ";
 if [ $REPLY == "1" ]; then
-    termux-toast -g center Updating Software;
+    termux-toast -b cyan -g center Updating Software;
 	apt update -y;
 	apt upgrade -y;
 	pkg update -y;
 	pkg upgrade -y;
 
-	termux-toast -g center Installing Software;
+	termux-toast -b cyan -g center Installing Software;
 	apt install git -y;
 	apt install wget -y;
 	apt install zip -y;
@@ -36,7 +36,7 @@ if [ $REPLY == "1" ]; then
 	apt install proot -y;
 	apt install sudo -y;
 	
-	termux-toast -g center Updating Software;
+	termux-toast -b cyan -g center Updating Software;
 	apt update -y;
 	apt upgrade -y;
 	pkg update -y;
