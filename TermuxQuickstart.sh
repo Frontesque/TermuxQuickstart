@@ -2,19 +2,23 @@ pkg install termux-api -y
 termux-toast -g center Termux Quickstart
 termux-notification --title tQuickstart --content Termux Quickstart Is Running
 clear
-echo ╔═══════════════════════════════════════╗
-read -p "║  1. Install Reccomended Packages      ║
-║  2. Install Fedora                    ║
-║  3. Install Ubuntu                    ║
-║  4. Install Debian                    ║
-║  5. Install Kali                      ║
-║  6. Install Arch                      ║
-║  7. Coming Soon                       ║
-║  8. Coming Soon                       ║
-║  9. Uninstallers                      ║
-║  X. Close Program                     ║
-╚═══════════════════════════════════════╝
-               Option: ";
+
+read -p "
+	╔═══════════════════════════════════════╗
+	║      Termux Quickstart 1.1 Indev      ║
+	╠═══════════════════════════════════════╣
+	║  1. Install Reccomended Packages      ║
+	║  2. Install Fedora                    ║
+	║  3. Install Ubuntu                    ║
+	║  4. Install Debian                    ║
+	║  5. Install Kali                      ║
+	║  6. Install Arch                      ║
+	║  7. Coming Soon                       ║
+	║  8. Coming Soon                       ║
+	║  9. Uninstallers                      ║
+	║  X. Close Program                     ║
+	╚═══════════════════════════════════════╝
+				   Option: ";
 if [ $REPLY == "1" ]; then
     termux-toast -g center Updating Software;
 	apt update -y;
