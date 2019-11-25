@@ -1,6 +1,6 @@
 pkg install termux-api -y
 termux-toast -g center Termux Quickstart
-termux-notification --title Termux Quickstart --content Termux Quickstart Is Running
+termux-notification --title tQuickstart --content Termux Quickstart Is Running
 clear
 echo ╔═══════════════════════════════════════╗
 read -p "║  1. Install Reccomended Packages      ║
@@ -16,12 +16,12 @@ read -p "║  1. Install Reccomended Packages      ║
 ╚═══════════════════════════════════════╝
                Option: ";
 if [ $REPLY == "1" ]; then
-    apt update -y;
+    termux-toast -g center Updating Software;
+	apt update -y;
 	apt upgrade -y;
 	pkg update -y;
 	pkg upgrade -y;
 
-	pkg install termux-api -y;
 	termux-toast -g center Installing Software;
 	apt install git -y;
 	apt install wget -y;
@@ -32,7 +32,8 @@ if [ $REPLY == "1" ]; then
 	apt install apache2 -y;
 	apt install proot -y;
 	apt install sudo -y;
-
+	
+	termux-toast -g center Updating Software;
 	apt update -y;
 	apt upgrade -y;
 	pkg update -y;
@@ -78,3 +79,4 @@ fi
 if [ $REPLY == "x" ]; then
     echo Exiting Termux Quickstart;
 fi
+rm TermuxQuickstart.sh
