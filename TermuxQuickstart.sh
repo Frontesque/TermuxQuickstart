@@ -2,17 +2,19 @@ pkg install termux-api -y
 termux-toast -g center Termux Quickstart
 termux-notification --title Termux Quickstart --content Termux Quickstart Is Running
 clear
-read -p "1. Install Reccomended Packages
-2. Install Fedora
-3. Install Ubuntu
-4. Install Debian
-5. Install Kali
-6. Install Arch
-7. Coming Soon
-8. Coming Soon
-9. Coming Soon
-
-Option: ";
+echo ╔═══════════════════════════════════════╗
+read -p "║  1. Install Reccomended Packages      ║
+║  2. Install Fedora                    ║
+║  3. Install Ubuntu                    ║
+║  4. Install Debian                    ║
+║  5. Install Kali                      ║
+║  6. Install Arch                      ║
+║  7. Coming Soon                       ║
+║  8. Coming Soon                       ║
+║  9. Uninstallers                      ║
+║  X. Close Program                     ║
+╚═══════════════════════════════════════╝
+               Option: ";
 if [ $REPLY == "1" ]; then
     apt update -y;
 	apt upgrade -y;
@@ -67,4 +69,12 @@ fi
 
 if [ $REPLY == "9" ]; then
     echo not a command yet;
+fi
+
+if [ $REPLY == "X" ]; then
+    echo Exiting Termux Quickstart;
+fi
+
+if [ $REPLY == "x" ]; then
+    echo Exiting Termux Quickstart;
 fi
