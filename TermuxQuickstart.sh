@@ -9,7 +9,7 @@ read -p "
 
 
 	╔═══════════════════════════════════════╗
-	║      Termux Quickstart 1.1 Indev      ║
+	║         Termux Quickstart 1.1         ║
 	╠═══════════════════════════════════════╣
 	║  1. Update Packages                   ║
 	║  2. Install Fedora                    ║
