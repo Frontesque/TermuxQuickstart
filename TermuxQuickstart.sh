@@ -1,40 +1,36 @@
 pkg install termux-api -y
-termux-toast -g center Termux Quickstart
-termux-notification --title Termux Quickstart --content Termux Quickstart Is Running
+termux-toast -b cyan -b cyan -g center Termux Quickstart
 clear
-read -p "1. Install Reccomended Packages
-2. Install Fedora
-3. Install Ubuntu
-4. Install Debian
-5. Install Kali
-6. Install Arch
-7. Coming Soon
-8. Coming Soon
-9. Coming Soon
 
-Option: ";
+read -p "
+
+
+
+
+
+	╔═══════════════════════════════════════╗
+	║      Termux Quickstart 1.1 Indev      ║
+	╠═══════════════════════════════════════╣
+	║  1. Update Packages                   ║
+	║  2. Install Fedora                    ║
+	║  3. Install Ubuntu                    ║
+	║  4. Install Debian                    ║
+	║  5. Install Kali                      ║
+	║  6. Install Arch                      ║
+	║  7. Coming Soon                       ║
+	║  8. Coming Soon                       ║
+	║  9. Work In Progress                  ║
+	║  X. Close Program                     ║
+	╚═══════════════════════════════════════╝
+	   Option: ";
 if [ $REPLY == "1" ]; then
-    apt update -y;
-	apt upgrade -y;
-	pkg update -y;
-	pkg upgrade -y;
-
-	pkg install termux-api -y;
-	termux-toast -g center Installing Software;
-	apt install git -y;
-	apt install wget -y;
-	apt install zip -y;
-	apt install unzip -y;
-	apt install python -y;
-	apt install python2 -y;
-	apt install apache2 -y;
-	apt install proot -y;
-	apt install sudo -y;
-
+    termux-toast -b cyan -g center Updating Software;
 	apt update -y;
 	apt upgrade -y;
 	pkg update -y;
 	pkg upgrade -y;
+	apt install zip -y;
+	apt install unzip -y;
 fi
 
 if [ $REPLY == "2" ]; then
@@ -68,3 +64,13 @@ fi
 if [ $REPLY == "9" ]; then
     echo not a command yet;
 fi
+
+if [ $REPLY == "X" ]; then
+    echo Exiting Termux Quickstart;
+fi
+
+if [ $REPLY == "x" ]; then
+    echo Exiting Termux Quickstart;
+fi
+echo Cleaning Up
+rm TermuxQuickstart.sh
