@@ -1,6 +1,5 @@
 pkg install termux-api -y
 termux-toast -g center Termux Quickstart
-termux-notification --title tQuickstart --content Termux Quickstart Is Running
 clear
 
 read -p "
