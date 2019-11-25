@@ -3,6 +3,11 @@ termux-toast -b cyan -b cyan -g center Termux Quickstart
 clear
 
 read -p "
+
+
+
+
+
 	╔═══════════════════════════════════════╗
 	║      Termux Quickstart 1.1 Indev      ║
 	╠═══════════════════════════════════════╣
