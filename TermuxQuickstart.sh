@@ -18,7 +18,7 @@ read -p "
 	║  9. Uninstallers                      ║
 	║  X. Close Program                     ║
 	╚═══════════════════════════════════════╝
-				   Option: ";
+	   Option: ";
 if [ $REPLY == "1" ]; then
     termux-toast -g center Updating Software;
 	apt update -y;
@@ -83,4 +83,5 @@ fi
 if [ $REPLY == "x" ]; then
     echo Exiting Termux Quickstart;
 fi
+echo Cleaning Up
 rm TermuxQuickstart.sh
