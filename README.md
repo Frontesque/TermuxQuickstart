@@ -5,5 +5,5 @@ pkg install wget -y && wget https://raw.githubusercontent.com/FrontlineMist57/Te
 
 Install [Development]:
 ```
-pkg install git -y && git clone https://github.com/FrontlineMist57/TermuxQuickstart/tree/development && chmod +x TermuxQuickstart.sh && bash QuickstartLauncher.sh
+pkg install git -y && git clone --branch development https://github.com/FrontlineMist57/TermuxQuickstart && cd TermuxQuickstart && chmod +x TermuxQuickstart.sh && bash QuickstartLauncher.sh
 ```
