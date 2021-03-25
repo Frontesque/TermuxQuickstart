@@ -72,7 +72,5 @@ fi
 if [ $REPLY == "x" ]; then
     echo Exiting Termux Quickstart;
 fi
-
 echo Cleaning Up
-echo joe
 rm TermuxQuickstart.sh
